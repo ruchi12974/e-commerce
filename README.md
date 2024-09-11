@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Title
+    Frontend Development Assignment: E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+    The goal of this assignment is to build a clean, modular, and scalable E-commerce website using any frontend framework (React, Angular, or Next.js). This project will focus on implementing core e-commerce functionalities such as product listing, search, cart management, and order placement with role-based access and JSON Server for backend simulation.
 
-## Available Scripts
+## Tech Stack
+    Frontend : React / Angular / Next.js (Choose one)
+    Backend : JSON Server
+    Deployment: Heroku / GitHub Pages
+    Languages: HTML, CSS, JavaScript (ES6+)
 
-In the project directory, you can run:
+## Completion Instructions
 
-### `npm start`
+### Functionality
+#### Must Have
+* Build an e-commerce website with multiple pages/components including Login, Home, Produts, cart, ProductDetailsSection, CartSummary, NotFound 
+* implement features such as authentication, role-based access, product listing, search, filtering, pagination
+### Features
+- **Product Listing**: Users can browse products, view details, and add items to their cart.
+- **Cart Management**: Users can manage items in their cart (add, remove, increment, decrement).
+- **Role-Based Access**: Admin users have access to an admin panel where they can manage products.
+- **Checkout Page**: Once a user adds items to the cart, they can proceed to checkout.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Pages and Navigation
+- **Home Page**: General product listings.
+- **Products Page**: List of products available to users.
+- **Product Details**: Detailed view of individual products.
+- **Cart Page**: View and modify cart contents.
+- **Checkout Page**: Final page to confirm purchase.
+- **Admin Page**: Only accessible to admins. Used to manage products.
+- **Login Page**: Allows users to log in and redirects them based on role.
+- **404 Page**: Fallback page for undefined routes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Navigation
+- `/login`: Redirects to login form.
+- `/products`: Shows product list.
+- `/cart`: Shows the user's cart.
+- `/checkout`: Proceed to purchase.
+- `/admin`: Only for admins.
+- `/not-found`: 404 error.
+### Role-Based Access Control
+Admins have access to:
+- AdminPage for product and user management.
 
-### `npm test`
+Regular users have access to:
+- Product browsing and purchasing functionality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Nice to Have
+* Performance Optimization:
+    * Implement lazy loading for images.
+    * Optimize assets to reduce loading times.
+* Error Handling:
+    * Gracefully handle errors (e.g., when data fails to load).
+    * Display clear error messages without crashing.
 
-### `npm run build`
+### Guidelines to Develop the Project
+#### Must Have
+* Code Quality:
+    * Maintain a modular structure.
+    * Follow DRY principles and proper naming conventions.
+    * Write reusable and well-organized code.
+    * Include comments and documentation for better understanding.
+* Responsiveness:
+    * Ensure the app is fully responsive across desktop, tablet, and mobile devices.
+    * Use responsive layouts that adapt smoothly across different screen sizes.
+* User Experience:
+    * Make the app intuitive and easy to navigate.
+    * Provide feedback for user actions (e.g., adding items to cart, order confirmation).
+    * The app should be easy to use and navigate.
+* Design Sense:
+    * Build a visually appealing UI with consistent colors, typography, and layout.
+* Error Handling:
+    * Handle errors gracefully and provide user-friendly error messages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Nice to Have
+* Testing:
+    * Unit tests for critical components.
+    * E2E testing for user flow scenarios.
+* Advanced Performance Optimization:
+    * Reduce asset sizes.
+* Implement caching or service workers for offline access.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Submission Instructions
+#### Must Have
+* Git Repository:
+    * Upload your project to a public Git repository (GitHub, GitLab, or Bitbucket).
+    * Include a README.md file with clear setup instructions.
+    * Ensure the project is fully functional without any major bugs or errors.
+* Deployment:
+    * Deploy the app using Heroku, GitHub Pages, or any other free hosting platform.
+    * The app should be accessible and fully functional from the deployment link.
+* Submission:
+    * Submit both the deployed app link and GitHub repository link via the provided Google Form.
+#### Nice to Have
+* Documentation:
+    * Include detailed user and developer documentation.
+    * Provide additional notes on optimizations or improvements.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Resources
+#### Design Files
+Header - logo
 
-### `npm run eject`
+### APIs
+procusts, PrimeDealsSection, AllProductsSection, Search, filtering, Sorting, ProductItemDetails, Login
+Reference API : 
+   https://apis.ccbp.in/login
+   https://apis.ccbp.in/products?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}
+   https://apis.ccbp.in/prime-deals
+   https://apis.ccbp.in/products/${id}
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Third-party Packages
+navigation (react-router-dom)
+jwt token storage (js-cookie) 
+Icons (react-icons)
+loading (react-loader-spinner)
